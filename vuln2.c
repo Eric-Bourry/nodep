@@ -2,12 +2,7 @@
 #include <string.h>
 #include <unistd.h>
 
-// pop eax; ret         : /x58/xc3                  0x0804846e
-// xor ebx,ebx ; ret  : /x31/xdb/xc3          0x08048475
-
-// echo -e "pop %eax \n ret" | as -al | tail -n +4 ; rm a.out
-
-int my_execlp() // 0x8048444
+int my_execlp() 
 {
     const char *file, *arg;
     __asm__ __volatile__ 
