@@ -1,0 +1,2 @@
+setuid(0x123)
+execlp("/bin/bash",0)
