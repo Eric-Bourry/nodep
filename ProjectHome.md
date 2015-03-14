@@ -1,0 +1,1 @@
+With this little script, you can automatically convert a classic shellcode into a "ret into libc" shellcode. It leverages common tools such as objdump and ldd.
